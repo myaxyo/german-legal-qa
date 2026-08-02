@@ -78,6 +78,12 @@ german-legal-qa/
 | [Open Legal Data](https://de.openlegaldata.io) | 100K+ anonymized court decisions | CC-BY |
 | [GerLayQA](https://huggingface.co/datasets/fhswf/GerLayQA) | German legal forum Q&A pairs | Research |
 
+## Trained Model
+
+The fine-tuned LoRA adapter is available on HuggingFace:
+
+**[jonprompter/german-legal-qa-3b-lora](https://huggingface.co/jonprompter/german-legal-qa-3b-lora)**
+
 ## Training
 
 Fine-tune with LoRA (3B, fits in 16GB) or QLoRA (7B, fits in ~8GB):
