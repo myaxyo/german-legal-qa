@@ -41,7 +41,6 @@ LoRA/QLoRA fine-tuning to adapt general LLMs to German legal domain:
 |---------------|-------|-------------|------|---------------|
 | 3B LoRA | Llama-3.2-3B | FP16 | ~8GB | 2-4h |
 | 3B QLoRA | Llama-3.2-3B | 4-bit | ~4GB | 2-3h |
-| 7B QLoRA | Qwen2.5-7B | 4-bit | ~10GB | 4-8h |
 
 Training uses:
 - SFTTrainer from TRL with sequence packing

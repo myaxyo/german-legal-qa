@@ -178,7 +178,7 @@ def create_demo() -> gr.Blocks:
 
                     Dieses System nutzt:
                     - **Retrieval**: FAISS-Index über deutsche Gesetze & Urteile
-                    - **Generation**: Fine-tuned Llama 3.2 / Qwen2.5
+                    - **Generation**: Fine-tuned Llama 3.2
                     - **Daten**: Gesetze im Internet, Open Legal Data, GerLayQA
 
                     [GitHub Repository](https://github.com/) | 

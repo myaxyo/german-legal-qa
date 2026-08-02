@@ -45,7 +45,7 @@ make demo
                                                   ▼
 ┌─────────────┐     ┌──────────────┐     ┌──────────────────┐
 │   Answer    │◀────│  Generator   │◀────│  Retrieved       │
-│  + Sources  │     │  (Llama/Qwen │     │  Context         │
+│  + Sources  │     │  (Llama 3.2  │     │  Context         │
 └─────────────┘     │   + LoRA)    │     └──────────────────┘
                     └──────────────┘
 ```
@@ -92,7 +92,6 @@ make train-7b
 
 Supported base models:
 - `unsloth/Llama-3.2-3B-Instruct`
-- `unsloth/Qwen2.5-7B-Instruct`
 
 ## Evaluation
 

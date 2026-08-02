@@ -20,7 +20,7 @@ from glqa.config import get_settings
 # Configuration
 # ---------------------------------------------------------------------------
 
-MODEL_ID = "mlx-community/Qwen2.5-7B-Instruct-4bit"
+MODEL_ID = "mlx-community/Llama-3.2-3B-Instruct-4bit"
 LORA_RANK = 16
 LORA_LAYERS = 16
 LEARNING_RATE = 1e-4
