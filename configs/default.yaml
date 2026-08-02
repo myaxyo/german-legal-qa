@@ -1,0 +1,49 @@
+# Default configuration for German Legal QA
+# Override via environment variables (GLQA_*) or .env file
+
+project_name: "German Legal QA"
+device: "mps"  # mps | cuda | cpu
+log_level: "INFO"
+
+data:
+  chunk_size: 512
+  chunk_overlap: 64
+  max_decisions: 100000
+  gerlayqa_hf_dataset: "fhswf/GerLayQA"
+
+embedding:
+  model_name: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  embedding_dim: 384
+  batch_size: 64
+  normalize: true
+
+rag:
+  top_k: 5
+  rerank: true
+  score_threshold: 0.3
+  generator_model: "unsloth/Llama-3.2-3B-Instruct"
+  max_new_tokens: 1024
+  temperature: 0.3
+
+training:
+  base_model: "unsloth/Llama-3.2-3B-Instruct"
+  quantization: "4bit"
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  epochs: 3
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  learning_rate: 0.0002
+  warmup_ratio: 0.03
+  max_seq_length: 2048
+  bf16: true
+
+evaluation:
+  num_samples: 500
+  metrics:
+    - exact_match
+    - f1
+    - rouge_l
+    - bert_score
+    - citation_accuracy
