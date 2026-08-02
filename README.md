@@ -170,8 +170,8 @@ MIT
 ```bibtex
 @software{german_legal_qa_2026,
   title={German Legal QA Assistant},
-  author={Jon},
+  author={jonprompter},
   year={2026},
-  url={https://github.com/YOUR_USER/german-legal-qa}
+  url={https://github.com/myaxyo/german-legal-qa}
 }
 ```
