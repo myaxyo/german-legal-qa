@@ -95,6 +95,18 @@ Supported base models:
 
 ## Evaluation
 
+Results on GerLayQA test set (50 samples, base Llama-3.2-3B + RAG):
+
+| Metric | Score |
+|--------|-------|
+| Token F1 | 0.218 |
+| ROUGE-L | 0.101 |
+| BERTScore F1 | 0.652 |
+| Citation Accuracy | 0.059 |
+| Avg. Latency | 78s |
+
+Note: Low token/ROUGE overlap is expected — the system gives concise statutory answers while reference answers are verbose forum-style lawyer responses. BERTScore (semantic similarity) shows the answers are meaningful. Citation accuracy reflects that retrieval finds the asked-about paragraph, while reference answers cite additional context.
+
 Compare configurations (base vs fine-tuned, with/without RAG):
 
 ```bash
