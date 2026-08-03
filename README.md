@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/7d5c2632-cdae-4d9c-ae3e-57052cc2a1c5
+
 # German Legal QA Assistant
 
 **"Ask German Law"** – A retrieval-augmented, fine-tuned LLM chatbot for German legal questions.
