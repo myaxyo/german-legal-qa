@@ -2,7 +2,7 @@
 
 **"Ask German Law"** – A retrieval-augmented, fine-tuned LLM chatbot for German legal questions.
 
-![Demo](demo.gif)
+https://github.com/user-attachments/assets/German-Legal-QA-demo.mp4
 
 This system answers questions about German civil, criminal, and labor law by combining:
 - A **vector-indexed knowledge base** of federal statutes and court decisions
